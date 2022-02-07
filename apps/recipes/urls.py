@@ -5,5 +5,5 @@ from . import views
 app_name = "recipes"
 
 urlpatterns = [
-    path('bbb/', views.index, name="core"),
+    path('', views.index, name="core"),
 ]
