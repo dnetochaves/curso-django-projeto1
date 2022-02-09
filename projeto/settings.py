@@ -116,14 +116,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
 
 #Configuração em ambiente de desenvolvimento
+STATIC_URL = 'static/'
+
 STATICFILES_DIRS = [
-   BASE_DIR / 'static',
+    'static',
 ]
 
+
 #Configuração em ambiente de produção
+#local onde após rodar a collecticstatic encaminhará os arquivos estáticos
 #STATIC_ROOT = BASE_DIR / 'static'
 
 
